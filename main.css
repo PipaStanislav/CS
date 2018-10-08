@@ -1,0 +1,47 @@
+td {
+	vertical-align: middle;
+	border: 1px solid black;
+}
+
+.header {
+	text-align: center;
+}
+
+#textarea {
+	width: 600px;
+	border: 2px solid black;
+	font-size: 14px;
+	resize: none;
+	margin-bottom: 30px; 
+	font-size: 14px;
+}
+
+.button {
+	width: 150px;
+	height: 30px;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+#addRow {
+	position: absolute;
+	top: 40px;
+	left: 240px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#removeRow {
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.input {
+	width: 100%;
+	font-size: 14px;
+	border: none;
+	outline:none;
+}
+
+
+

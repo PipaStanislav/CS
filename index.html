@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title> CS </title>
+</head>
+<body>
+	<div id="body">
+
+		<div id="addRow"> add row <i class="fas fa-plus-circle fa-lg"></i> </div>
+
+		
+		<table width="600px" cellpadding="2px" cellspacing="0" style="margin: 0 auto; margin-bottom: 100px">
+			<tbody>
+				<tr>
+					<td class="header"  style="width: 30px">№</td>
+					<td class="header"> Name </td>
+					<td class="header"> Value </td>
+					<td style="border: none; width: 35px;"></td>
+				</tr>
+			</tbody>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+
+
+		<div style="text-align: center;"> 
+			<textarea name="inputData" id="textarea" cols="30" rows="15" onkeydown="insertTab(this, event);"></textarea>
+		</div>
+
+		<div style="text-align: center;">
+			<button id="updateTable" class="button"> update table </button>
+
+			<button id="getDataFromTable" class="button"> get data from table </button>
+
+			<div style="display: inline-block;">
+				<input id="file" title="your text" type="file" style="display: none;">
+				<button id="addCSVFile" class="button"> add CSV file </button>
+			</div>
+			
+			<button id="downloadCSVFile" class="button"> download CSV file </button>
+
+			<button id="downloadJSONFile" class="button"> download JSON file </button>
+		</div>
+
+		
+	</div>
+
+
+
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.1/papaparse.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/1.0.3/jquery.tablednd.min.js"></script>
+
+	<script src="tools.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
